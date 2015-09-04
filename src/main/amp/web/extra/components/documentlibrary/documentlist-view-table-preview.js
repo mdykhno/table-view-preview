@@ -313,7 +313,7 @@
         
         scope.widgets.dataTable.unsubscribe("renderEvent",
             this.onDataTableRenderEventCallBack, this);
-debugger
+
         var preview_container = Dom.get(scope.id+"-"+"previewer-div");
         if (preview_container!=null)
         preview_container.parentNode.removeChild(preview_container);
@@ -459,7 +459,6 @@ debugger
 
     Alfresco.DocumentListTableViewRendererPreview.prototype.renderWebPreview = function DL_FVR_renderWebPreview(scope, record)
     {
-        debugger
         //var containerTarget; // This will only get set if thumbnail represents a container
         //
         //var oRecordSet = scope.widgets.dataTable.getRecordSet();
@@ -592,7 +591,6 @@ debugger
 
     Alfresco.DocumentListTableViewRendererPreview.prototype.onDataTableRender = function DL_TVRP_onDataTableRender(scope, event)
     {
-debugger
         var container = Dom.get(scope.id + this.parentElementIdSuffix).parentNode;
         var preview_container = Dom.get(scope.id+"-"+"previewer-div");
         if (preview_container==null) {
@@ -620,7 +618,6 @@ debugger
 
             if (isFirstFoundFile) { // if at least one file exists
 
-                debugger
                 Dom.addClass(container, 'width-one-third');
                 Dom.removeClass(preview_container, 'previewer-two-third');
 
