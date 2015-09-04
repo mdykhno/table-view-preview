@@ -492,7 +492,7 @@ debugger
                 {
                     //itemPreviewDiv.innerHTML += '<span class="folder">' + (thumbnail.isLink ? '<span class="link"></span>' : '') +
                     //Alfresco.DocumentList.generateFileFolderLinkMarkup(scope, recordData) + thumbnail.html + '</a>';
-                    itemPreviewDiv.innerHTML = '<span class="docListInstructionTitle" id="yui-gen442">Drag and drop to upload files!</span>';
+                    itemPreviewDiv.innerHTML = '<span class="docListInstructionTitle" id="yui-gen442">'+Alfresco.messages Drag and drop to upload files!</span>';
                 }
             }
             else
@@ -622,6 +622,7 @@ debugger
 
                 debugger
                 Dom.addClass(container, 'width-one-third');
+                Dom.removeClass(preview_container, 'previewer-two-third');
 
             }
             else {

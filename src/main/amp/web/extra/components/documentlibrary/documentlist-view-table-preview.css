@@ -240,6 +240,12 @@
     width: 63%;
 }
 
-.previewer-two-third {
-    float: left;
-  }
+
+
+.previewer-two-third div{
+    text-align: center;
+    margin-top: 26px;
+    /* margin-left: 50%; */
+    /* width: 100%; */
+
+}
